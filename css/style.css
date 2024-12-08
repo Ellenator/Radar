@@ -1,17 +1,8 @@
 
 :root{
-    
+    --pink: #ff00ce;
+    --dyblilla: #210456;
+    --lilla: #9f13cc;
+    --gul: #fee737;
+    --tyrkis: #04f0d9;
 }
-
-#logoheader{
-    width: 10%;
-    height: auto;
-}
-
-nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
