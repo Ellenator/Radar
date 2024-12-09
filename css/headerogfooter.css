@@ -105,7 +105,7 @@ nav{
     color: var(--pink);
 }
 
-/**************************************************FOOTER***********************************************/
+/**************************************************FOOTER PC***********************************************/
 
 footer{
     text-align: center;
@@ -182,7 +182,7 @@ h1{
         background-color: var(--pink);
         width: 80px;
         height: 35px;
-        font-size: 10px;
+        font-size: 15px;
         margin-top: 1%;
         margin-right: 1%;
         margin-left: 20px;
@@ -205,7 +205,7 @@ h1{
             background-color: var(--pink);
             width: 80px;
             height: 35px;
-            font-size: 10px;
+            font-size: 15px;
             margin-top: 1%;
             margin-right: 1%;
             margin-left: 20px;
