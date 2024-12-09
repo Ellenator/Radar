@@ -227,36 +227,36 @@ h1{
     display: none;
 }
 
-/*dropdown menu på tablet og tlf */
-.dropbtn {
-    display: block;
+/* Gemmer checkbox men den virker stadig */
+.dropdown-checkbox {
+    display: none;
 }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 130%;
-    border: none;
-    outline: none;
+
+/* button styleing */
+.dropbtn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
     color: var(--pink);
-    padding: 14px 16px;
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: block; /******************************lav til none så gemmer menuen sig********/
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+}
+
+/* Dropdown menu gemt uden klik */
+.dropdown-content {
+    display: none;
     position: absolute;
     background-color: var(--dyblilla);
-    min-width: 160px;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: var(--tyrkis);
-    padding: 12px 16px;
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* viser dropdown menu når checkbox er klikket */
+.dropdown-checkbox:checked ~ .dropdown-content {
     display: block;
-  }
+}
   
   
 
