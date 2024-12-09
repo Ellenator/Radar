@@ -38,7 +38,7 @@ nav{
 
 /*skjuler dropdownmenu på pc*/
 
-.dropbtn{
+.dropdown{
     display: none;
 }
 
@@ -232,6 +232,10 @@ h1{
     display: none;
 }
 
+.dropdown{
+    display: block;
+}
+
 /* button styleing */
 .dropbtn {
     display: inline-block;
@@ -248,14 +252,21 @@ h1{
     display: none;
     position: absolute;
     background-color: var(--dyblilla);
-    min-width: 200px;
-    padding: 10px 0;
     z-index: 1000;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: var(--tyrkis);
+    padding: 10px 15px;
+    display: block;
 }
 
 /* viser dropdown menu når checkbox er klikket */
 .dropdown-checkbox:checked ~ .dropdown-content {
-    display: block;
+    display: grid;
 }
   
   
