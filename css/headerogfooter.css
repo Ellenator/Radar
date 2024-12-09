@@ -92,6 +92,7 @@ nav{
     align-self: center;
     margin-bottom: 1%;
     display: block;
+    box-shadow: -4px 4px 0 var(--dyblilla);
 }
 
 /* hover funktioner */
