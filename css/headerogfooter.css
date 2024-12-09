@@ -256,26 +256,24 @@ h1{
     left: 0;
     right: 0;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .dropdown-content a {
     color: var(--tyrkis);
     padding: 10px 15px;
     display: block;
+    font-size: 120%;
 }
 
 /* viser dropdown menu når checkbox er klikket */
 .dropdown-checkbox:checked ~ .dropdown-content {
     display: grid;
 }
-  
-  
 
 
-
-
-
-/* footer */
+/******************************************************footer på tlf***************************/
 footer {
     width: 100%;
     font-size: 60%;
