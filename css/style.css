@@ -114,6 +114,13 @@ body, html {
 /********************************************TABLET************************************/
 @media only screen and (max-width: 768px){
 
+/*overskift tilpasning*/
+    .slenderbodiesoverskrift{
+        font-size: 13vw;
+        text-wrap: nowrap;
+        padding-right: 30px;
+    }
+
 /*små knapmenuer redigering*/
     .knaptekster{
         padding-top: 3vw;
@@ -144,6 +151,15 @@ body, html {
 
 /**************************************TELEFON*******************************************/
 @media only screen and (max-width: 480px){
+
+/*overskift tilpasning*/
+    .slenderbodiesoverskrift{
+        font-size: 13vw;
+        text-wrap: nowrap;
+        padding-right: 30px;
+    }
+
+/*små knapmenuer redigering*/
     .knaptekster{
         padding-top: 4vw;
         padding-bottom: 4vw;
@@ -156,6 +172,7 @@ body, html {
         gap: 5%;
     }
 
+/*storeknapmenuer redigering*/
     .storeknapmenuer{
         flex-direction: column;
         align-items: center;
