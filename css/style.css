@@ -240,20 +240,27 @@ body{
 }
 
 /*overskift "del din historie" tilpasning*/
-    .deldinhistorietlf{
-        color: var(--pink);
-        font-size: calc(8vw + 1rem);
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
-        display: block;
+.deldinhistorietlf{
+    color: var(--pink);
+    font-size: calc(8vw + 1rem);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+    display: block;
     }
 
-    .baggrundsbilledetotlf{
-        display: block;
-        position: absolute;
-        z-index: -1;
-        width: 100vw;
+.baggrundsbilledetotlf{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
     }
+
+/*overskfit del din historie redigering*/
+.deldinhistorietlf{
+    font-size: 12vw;
+    text-wrap: nowrap;
+    padding-right: 40px;
+}
 }
