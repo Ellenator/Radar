@@ -1,8 +1,30 @@
+/* typografi implementering */
+@font-face {
+    font-family: radarfont;
+    src: url(intrebol.ttf);
+}
 
+/* Variabler */
 :root{
     --pink: #ff00ce;
     --dyblilla: #210456;
     --lilla: #9f13cc;
     --gul: #fee737;
     --tyrkis: #04f0d9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: radarfont;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
