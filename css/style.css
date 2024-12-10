@@ -29,3 +29,39 @@ body, html {
     width: 100%;
 }
 
+/****************************************************PC**********************************************/
+ body{
+    background-image: url(../img/slenderbodiesbaggrund.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*overskift redigering*/
+.slenderbodiesoverskrift {
+    color: var(--pink);
+    font-size: calc(6vw + 1rem); /* Responsive font size */
+    width: 80%; /* Fill 80% of the screen width */
+    margin: 0 auto; /* Center the text horizontally */
+    text-align: center; /* Optional: Center the text itself */
+    word-wrap: break-word; /* Handle long words gracefully */
+    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+}
+
+/*knap redigering*/
+.knapper {
+    display: flex;
+    gap: 2%;
+    justify-content: center; 
+    align-items: center;
+}
+
+.knaptekster{
+    background-color: var(--tyrkis);
+    color: var(--pink);
+    box-shadow: -4px 4px 0 var(--dyblilla);
+    width: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 150%;
+    margin-top: -80px;
+}
