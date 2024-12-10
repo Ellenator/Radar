@@ -30,7 +30,8 @@ body, html {
 }
 
 /****************************************************PC**********************************************/
- body{
+/*baggrundsbillede øverst*/ 
+body{
     background-image: url(../img/slenderbodiesbaggrund.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +40,7 @@ body, html {
 /*overskift redigering*/
 .slenderbodiesoverskrift {
     color: var(--pink);
-    font-size: calc(6vw + 1rem);
+    font-size: calc(8vw + 1rem);
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -84,8 +85,8 @@ body, html {
 .storeknapmenuertekst{
     background-color: var(--dyblilla);
     color: var(--pink);
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-top: 12vw;
+    padding-bottom: 12vw;
     width: 30vw;
     font-size: 3.5vw;
     cursor: pointer;
@@ -95,6 +96,32 @@ body, html {
 .storeknapmenuertekst:hover{
     color: var(--dyblilla);
     background-color: var(--pink);
+}
+
+/*del din his baggrundsbillede redigering*/
+.baggrundsbilledeto{
+    width: 100%;
+    margin-top: -14%;
+    position: absolute;
+    z-index: -1;
+}
+
+/*del din historie overskift redigering*/
+.deldinhistorie {
+    color: var(--pink);
+    font-size: calc(8vw + 1rem);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+    margin-top: 80px;
+    display: block;
+    margin-top: 18%;
+    margin-bottom: 28%;
+}
+
+.deldinhistorie:hover{
+    cursor: pointer;
 }
 
 /*******************************************tilpasning på mindre pc skærme********************************************/
@@ -140,12 +167,19 @@ body, html {
     }
     
     .storeknapmenuertekst{
-        padding-top: 15vw;
-        padding-bottom: 15vw;
+        padding-top: 14vw;
+        padding-bottom: 14vw;
         width: 35vw;
         font-size: 4.5vw;
         margin-top: 3vw;
     }
+
+/*overskift "del din historie" tilpasning*/
+.deldinhistorie{
+    font-size: 11vw;
+    text-wrap: nowrap;
+    padding-right: 30px;
+}
 
 }
 
