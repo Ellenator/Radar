@@ -59,9 +59,9 @@ body, html {
     background-color: var(--tyrkis);
     color: var(--pink);
     box-shadow: -4px 4px 0 var(--dyblilla);
-    width: 120px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 150%;
+    padding-top: 2vw; /* Scales with viewport width */
+    padding-bottom: 2vw; /* Scales with viewport width */
+    width: 10vw;
+    font-size: 2vw;
     margin-top: -80px;
 }
