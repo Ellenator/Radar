@@ -30,7 +30,16 @@ body, html {
 }
 
 /****************************************************PC**********************************************/
-/*baggrundsbillede øverst*/ 
+/*del din historie og baggrundsbillede til tlf skjult på pc og tablet*/
+.deldinhistorietlf{
+    display: none;
+}
+
+.baggrundsbilledetotlf{
+    display: none;
+}
+
+/*baggrundsbillede slenderbodies*/ 
 body{
     background-image: url(../img/slenderbodiesbaggrund.jpg);
     background-size: cover;
@@ -163,7 +172,7 @@ body{
 
 /*storeknapmenuer redigering*/
     .storeknapmenuer{
-        gap: 10%;
+        gap: 5%;
     }
     
     .storeknapmenuertekst{
@@ -221,4 +230,30 @@ body{
         margin-top: 3vw;
     }
     
+/*skjuler del din his og baggrundsbillede fra tablet og pc*/
+.baggrundsbilledeto{
+    display: none;
+}
+
+.deldinhistorie{
+    display: none;
+}
+
+/*overskift "del din historie" tilpasning*/
+    .deldinhistorietlf{
+        color: var(--pink);
+        font-size: calc(8vw + 1rem);
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+        display: block;
+    }
+
+    .baggrundsbilledetotlf{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+    }
 }
