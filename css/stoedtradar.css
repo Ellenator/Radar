@@ -24,7 +24,6 @@
     box-sizing: border-box; /* Ensure padding and borders are included in width calculations */
 }
 
-
 body, html {
     margin: 0;
     padding: 0;
@@ -37,11 +36,21 @@ body, html {
 
 /* Background Image */
 body {
-    background-image: url(../img/baggrundsbilledeto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
+    background-image: 
+    linear-gradient(
+        to top,                 /* Gradient direction: bottom to top */
+        rgba(33, 4, 86, 1) 0%, /* Fully opaque dark purple at the bottom */
+        rgba(33, 4, 86, 1) 90%, /* Maintain full purple up to 30% */
+        rgba(33, 4, 86, 0.8) 95%, /* Slightly transparent purple */
+        rgba(33, 4, 86, 0.5) 98%, /* More transparent purple */
+        rgba(33, 4, 86, 0.2) 100% /* Minimal transparency at the top */
+    ),
+    url(../img/baggrundsbilledeto.jpg); /* Background image */
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100vw;
+position: relative;
 }
 
 /* Section: Hvorfor Støtte Radar */
@@ -49,14 +58,12 @@ body {
     color: var(--pink);
     text-align: left;
     font-size: 2.5vw;
-    margin-left: 3%;
     margin-top: 50px;
-    max-width: 100%;
+    width: 100vw;
 }
 
 /* Main Container */
 main {
-    background-color: var(--dyblilla);
     width: 100%;
     max-width: 100%;
     padding: 20px;
