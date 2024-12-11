@@ -96,7 +96,7 @@ main {
 
 /*Carousel med infographics*/
 .carousel-container {
-    position: relative;
+    position: relative; /* Ensures .carousel-nav is positioned relative to this container */
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
@@ -158,30 +158,37 @@ input[type="radio"] {
 }
 
 .carousel-nav {
+    position: absolute; /* Allow precise placement */
+    top: 50%; /* Align vertically in the middle of the infographics */
+    width: 100%; /* Ensure navigation spans the width of the container */
+    transform: translateY(-50%); /* Adjust for precise centering */
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: space-between; /* Place buttons on the sides */
+    pointer-events: none;
 }
 
 .nav-btn {
+    pointer-events: all; /* Enable pointer events only on the buttons */
     font-size: 2rem;
     color: var(--tyrkis);
     cursor: pointer;
     display: inline-block;
+    background: none;
+    border: none;
     text-align: center;
     width: 40px;
     height: 40px;
     line-height: 40px;
-}
+    }
 
 .nav-btn:first-of-type::before {
-    content: "\f104";
+    content: "\f104"; /* Left arrow from Font Awesome */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
 .nav-btn:last-of-type::before {
-    content: "\f105";
+    content: "\f105"; /* Right arrow from Font Awesome */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
@@ -189,3 +196,8 @@ input[type="radio"] {
 .nav-btn:hover::before {
     color: var(--pink);
 }
+
+/***************************************************TABLET***************************************/
+
+
+/****************************************************TLF*****************************************/
