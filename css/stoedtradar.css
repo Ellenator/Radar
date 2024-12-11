@@ -86,43 +86,41 @@ main{
 .infographics {
     display: flex;
     overflow: hidden;
-    width: 80%; /* Restricts the visible area */
+    width: 90%; /* Restricts the visible area */
     justify-content: space-evenly;
     align-items: baseline;
 }
 
 .infographic-item {
     text-align: center;
-    flex: 0 0 33%; /* Ensures 3 items fit */
     padding: 10px;
 }
 
 .infographic-item img {
-    width: 80%;
+    width: 70%;
     height: auto;
     margin-bottom: 10px;
 }
 
 .infographic-item p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-.arrow {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: var(--gul); /* Yellow color for arrows */
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    font-size: 3vw;
 }
 
 .infographics p{
     color: var(--tyrkis);
     font-family: "Oxanium", serif;
     margin-top: 10%;
+}
+
+/*pile redigering*/
+.arrow {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .arrow.prev {
@@ -133,4 +131,8 @@ main{
 .arrow.next {
     right: 2%;
     color: var(--tyrkis);
+}
+
+.arrow.prev:hover, .arrow.next:hover{
+    color: var(--pink);
 }
