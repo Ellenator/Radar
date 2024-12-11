@@ -35,6 +35,7 @@ body, html {
 body{
     background-image: url(../img/baggrundsbilledeto.jpg);
     background-repeat: no-repeat;
+    width: 100vw;
 }
 
 /*redigering af første overskift hvorfor støt radar*/
@@ -44,6 +45,7 @@ body{
     font-size: 2.5vw;
     margin-left: 3%;
     margin-top: 15%;
+    padding-top: 2%;
 }
 
 /* tilføjer den lilla baggrund over hele main*/
@@ -71,4 +73,64 @@ main{
     font-size: 2.5vw;
     margin-top: 6%;
     margin-left: 3%;
+}
+
+/*redigering af infographics*/
+.infographic-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+}
+
+.infographics {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Restricts the visible area */
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.infographic-item {
+    text-align: center;
+    flex: 0 0 33%; /* Ensures 3 items fit */
+    padding: 10px;
+}
+
+.infographic-item img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.infographic-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--gul); /* Yellow color for arrows */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.infographics p{
+    color: var(--tyrkis);
+    font-family: "Oxanium", serif;
+    margin-top: 10%;
+}
+
+.arrow.prev {
+    left: 2%;
+    color: var(--tyrkis);
+}
+
+.arrow.next {
+    right: 2%;
+    color: var(--tyrkis);
 }
