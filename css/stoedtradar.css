@@ -21,31 +21,29 @@
     list-style: none;
     text-decoration: none;
     font-family: radarfont;
-    box-sizing: border-box; /* Ensure padding and borders are included in width calculations */
+    box-sizing: border-box;
 }
 
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 100%; /* Prevent content from overflowing horizontally */
-    overflow-x: hidden; /* Hide any accidental overflow */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /******************************************************PC*************************************************/
-
-/* Background Image */
+/* Baggrundsbillede og gradient */
 body {
     background-image: 
     linear-gradient(
-        to top,                 /* Gradient direction: bottom to top */
-        rgba(33, 4, 86, 1) 0%, /* Fully opaque dark purple at the bottom */
-        rgba(33, 4, 86, 1) 90%, /* Maintain full purple up to 30% */
-        rgba(33, 4, 86, 0.8) 95%, /* Slightly transparent purple */
-        rgba(33, 4, 86, 0.5) 98%, /* More transparent purple */
-        rgba(33, 4, 86, 0.2) 100% /* Minimal transparency at the top */
-    ),
-    url(../img/baggrundsbilledeto.jpg); /* Background image */
+        to top,
+        rgba(33, 4, 86, 1) 0%,
+        rgba(33, 4, 86, 1) 90%,
+        rgba(33, 4, 86, 0.8) 95%,
+        rgba(33, 4, 86, 0.5) 98%, 
+        rgba(33, 4, 86, 0.2) 100%),
+    url(../img/baggrundsbilledeto.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -68,25 +66,25 @@ main {
     width: 100%;
     max-width: 100%;
     padding: 20px;
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    box-sizing: border-box;
 }
 
 /* Text Section */
 .tekst {
     width: 90%;
-    max-width: 100%; /* Prevent the text block from exceeding the screen width */
+    max-width: 100%;
     color: var(--pink);
     text-align: justify;
     font-family: "Oxanium", serif;
     margin: auto;
     margin-top: -130px;
-    padding: 3% 5%; /* Add padding for spacing without exceeding width */
+    padding: 3% 5%;
     line-height: 200%;
     font-weight: 100;
     font-size: 2vw;
 }
 
-/* Section: Måder at Støtte På */
+/* redigering af overskiften Måder at Støtte På */
 .maaderstoedt h1 {
     text-align: left;
     font-size: 3vw;
@@ -96,71 +94,78 @@ main {
     margin-bottom: -150px;
 }
 
-/*karusel*/
+/*Carousel med infographics*/
 .carousel-container {
     position: relative;
-    width: 90%; /* Adjust width as needed */
+    width: 90%;
     margin: 0 auto;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
 }
 
 
 .carousel-track {
     display: flex;
-    width: 300%; /* Three sets of items (100% x 3) */
-    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: baseline; /* Align all items to their baseline */
+    align-items: baseline;
     overflow: hidden;
 }
 
 .carousel-item {
-    flex: 0 0 33.33%; /* Show 3 items per slide */
+    flex: 0 0 33.33%;
     text-align: center;
     box-sizing: border-box;
     padding: 10px;
-    display: flex; /* Make each item a flex container */
-    flex-direction: column; /* Arrange image and content vertically */
-    justify-content: flex-end; /* Push content to the bottom */
-    align-items: center; /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .carousel-item img {
     display: block;
-    width: 80%; /* Adjust image size */
+    width: 80%;
     height: auto;
-    margin-bottom: 10px; /* Add spacing from any text */
+    margin-bottom: 10px;
 }
 
-/* Hide radio buttons */
+.carousel-item h1{
+    font-family: "Oxanium", serif;
+    font-weight: 100;
+    font-size: 3vw;
+    margin-top: 15px;
+}
+
+/* Gemmer radiobuttons */
 input[type="radio"] {
     display: none;
 }
 
-/* Slide 1 */
+/* Slider 1 */
 #slide1:checked ~ .carousel .carousel-track {
     transform: translateX(0%);
 }
 
-/* Slide 2 */
+/* Slider 2 */
 #slide2:checked ~ .carousel .carousel-track {
     transform: translateX(-100%);
 }
 
 .carousel-nav {
     display: flex;
-    justify-content: space-between; /* Place arrows on the sides */
+    justify-content: space-between;
     margin: 20px 0;
 }
 
 .nav-btn {
-    font-size: 2rem; /* Adjust the size of the arrows */
-    color: var(--tyrkis); /* Set the arrow color */
+    font-size: 2rem;
+    color: var(--tyrkis);
     cursor: pointer;
     display: inline-block;
     text-align: center;
@@ -170,17 +175,17 @@ input[type="radio"] {
 }
 
 .nav-btn:first-of-type::before {
-    content: "\f104"; /* Font Awesome's left arrow icon */
+    content: "\f104";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
 .nav-btn:last-of-type::before {
-    content: "\f105"; /* Font Awesome's right arrow icon */
+    content: "\f105";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
 .nav-btn:hover::before {
-    color: var(--pink); /* Change color on hover */
+    color: var(--pink);
 }
