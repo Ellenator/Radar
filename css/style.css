@@ -30,12 +30,8 @@ body, html {
 }
 
 /****************************************************PC**********************************************/
-/*del din historie og baggrundsbillede til tlf skjult på pc og tablet*/
-.deldinhistorietlf{
-    display: none;
-}
-
-.baggrundsbilledetotlf{
+/*skjuler knap til tlf på pc og tablet*/
+.storeknapmenuertekst3{
     display: none;
 }
 
@@ -102,6 +98,17 @@ body{
     margin-top: 3vw;
 }
 
+.storeknapmenuertekst2{
+    background-color: var(--dyblilla);
+    color: var(--pink);
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+    width: 30vw;
+    font-size: 3.5vw;
+    cursor: pointer;
+    margin-top: 3vw;
+}
+
 .storeknapmenuertekst:hover{
     color: var(--dyblilla);
     background-color: var(--pink);
@@ -139,10 +146,18 @@ body{
     .storeknapmenuertekst{
         margin-top: 1vw;
     }
+
+    .storeknapmenuertekst2{
+        margin-top: 1vw;
+    }
 }
 
 @media only screen and (max-width: 918px){
     .storeknapmenuertekst{
+        margin-top: 0.3vw;
+    }
+
+    .storeknapmenuertekst2{
         margin-top: 0.3vw;
     }
 }
@@ -176,6 +191,14 @@ body{
     }
     
     .storeknapmenuertekst{
+        padding-top: 14vw;
+        padding-bottom: 14vw;
+        width: 35vw;
+        font-size: 4.5vw;
+        margin-top: 3vw;
+    }
+
+    .storeknapmenuertekst2{
         padding-top: 14vw;
         padding-bottom: 14vw;
         width: 35vw;
@@ -227,28 +250,25 @@ body{
         padding-bottom: 30vw;
         width: 70vw;
         font-size: 8vw;
-        margin-bottom: 14vw;
+        margin-bottom: -20%;
     }
-    
-/*skjuler del din his og baggrundsbillede fra tablet og pc*/
-.baggrundsbilledeto{
-    display: none;
-}
 
-.deldinhistorie{
-    display: none;
-}
+/*skjuler knap på fra pc på tlf*/
+    .storeknapmenuertekst2{
+       display: none;
+    }
 
-/*overskift "del din historie" tilpasning*/
-.deldinhistorietlf{
+/*tilføjer kanp på tlf det rigtige sted*/
+.storeknapmenuertekst3{
+    padding-top: 30vw;
+    background-color: var(--dyblilla);
     color: var(--pink);
-    width: 80%; /* Set a defined width for centering */
-    margin: 0 auto; /* Horizontally center the element */
-    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+    margin-top: -14%;
+    padding-bottom: 30vw;
+    width: 70vw;
+    font-size: 8vw;
+    margin-bottom: 14vw;
     display: block;
-    font-size: 10vw; /* Adjust font size for small screens */
-    text-align: center; /* Center text within the element */
-    text-wrap: nowrap; /* Prevent text wrapping */
-    }
+}
 
 }
