@@ -28,3 +28,35 @@ body, html {
     padding: 0;
     width: 100%;
 }
+
+/******************************************************PC*************************************************/
+
+body{
+    background-image: url(../img/baggrundsbilledeto.jpg);
+    background-repeat: no-repeat;
+}
+
+/*redigering af første overskift hvorfor støt radar*/
+.hvorforstoedt{
+    color: var(--pink);
+    text-align: left;
+    font-size: 2.5vw;
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+main{
+    background-color: var(--dyblilla);
+}
+
+/*redigering af teksten til hvorfor stødt*/
+.tekst{
+    width: 80%;
+    color: var(--pink);
+    text-align: justify;
+    font-family: "Oxanium", serif;
+    margin-top: -10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
