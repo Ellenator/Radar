@@ -145,7 +145,7 @@ main {
 .arrow {
     background: none;
     border: none;
-    font-size: 4rem;
+    font-size: 300%;
     cursor: pointer;
     position: absolute;
     top: 50%;
