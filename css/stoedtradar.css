@@ -91,7 +91,7 @@ main {
     margin-top: 6%;
     margin-left: 3%;
     max-width: 100%;
-    margin-bottom: -150px;
+    margin-bottom: -120px;
 }
 
 /*Carousel med infographics*/
@@ -168,7 +168,7 @@ input[type="radio"] {
 }
 
 .nav-btn {
-    pointer-events: all; /* Enable pointer events only on the buttons */
+    pointer-events: all;
     font-size: 2rem;
     color: var(--tyrkis);
     cursor: pointer;
@@ -182,13 +182,13 @@ input[type="radio"] {
     }
 
 .nav-btn:first-of-type::before {
-    content: "\f104"; /* Left arrow from Font Awesome */
+    content: "\f104"; /* venstre pil fra Font Awesome */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
 .nav-btn:last-of-type::before {
-    content: "\f105"; /* Right arrow from Font Awesome */
+    content: "\f105"; /* højre pil fra Font Awesome */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
@@ -197,7 +197,18 @@ input[type="radio"] {
     color: var(--pink);
 }
 
-/***************************************************TABLET***************************************/
 
+/****************************************TILPASNING PÅ MINDRE PC SKÆRME******************************/
+@media only screen and (max-width: 1135px){
+   
+}
+
+/***************************************************TABLET***************************************/
+@media only screen and (max-width: 768px){
+
+}
 
 /****************************************************TLF*****************************************/
+@media only screen and (max-width: 480px){
+
+}
