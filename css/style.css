@@ -42,6 +42,30 @@ body{
     background-repeat: no-repeat;
 }
 
+body::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(33, 4, 86, 0.9) 0%,  /* More intense at the very top */
+        rgba(33, 4, 86, 0.7) 10%, /* Slightly less intense */
+        rgba(33, 4, 86, 0.4) 20%, /* Transition to sheer */
+        rgba(33, 4, 86, 0.1) 35%, /* Very sheer */
+        rgba(0, 0, 0, 0) 100%     /* Fully transparent at the bottom */
+    );
+    z-index: 1; /* Ensure it is above the background image */
+    pointer-events: none; /* Allow interactions with other elements */
+}
+
+/*header over gradient*/
+header {
+    position: relative; /* Ensure stacking context */
+    z-index: 3; /* Place above the gradient */
+}
+
 /*overskift redigering*/
 .slenderbodiesoverskrift {
     color: var(--pink);
@@ -52,6 +76,8 @@ body{
     word-wrap: break-word;
     text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
     margin-top: 80px;
+    position: relative; /* Ensure stacking context */
+    z-index: 2; /* Place above the gradient */
 }
 
 /*små knapmenuer redigering*/
@@ -60,9 +86,11 @@ body{
     gap: 5%;
     justify-content: center; 
     align-items: center;
+    position: relative; /* Create a stacking context */
+    z-index: 3; /* Ensure it is above the gradient */
 }
 
-.knaptekster{
+.knaptekster {
     background-color: var(--tyrkis);
     color: var(--pink);
     box-shadow: -5px 5px 0 var(--dyblilla);
@@ -72,6 +100,8 @@ body{
     font-size: 2vw;
     margin-top: -110px;
     cursor: pointer;
+    position: relative; /* Ensure stacking context */
+    z-index: 3; /* Place above the gradient */
 }
 
 .knaptekster:hover{
@@ -80,14 +110,16 @@ body{
 }
 
 /*storeknapmenuer redigering*/
-.storeknapmenuer{
+.storeknapmenuer {
     display: flex;
     gap: 5%;
     justify-content: center;
     align-items: center;
+    position: relative; /* Ensure stacking context */
+    z-index: 2; /* Place above the gradient */
 }
 
-.storeknapmenuertekst{
+.storeknapmenuertekst {
     background-color: var(--dyblilla);
     color: var(--pink);
     padding-top: 12vw;
@@ -96,6 +128,8 @@ body{
     font-size: 3.5vw;
     cursor: pointer;
     margin-top: 3vw;
+    position: relative; /* Ensure stacking context */
+    z-index: 3; /* Place above the gradient */
 }
 
 .storeknapmenuertekst2{
