@@ -55,11 +55,12 @@ position: relative;
 
 /* Section: Hvorfor Støtte Radar */
 .hvorforstoedt {
-    color: var(--pink);
     text-align: left;
-    font-size: 2.5vw;
-    margin-top: 50px;
-    width: 100vw;
+    font-size: 3vw;
+    margin-top: 6%;
+    margin-left: 3%;
+    max-width: 100%;
+    color: var(--pink);
 }
 
 /* Main Container */
@@ -78,89 +79,108 @@ main {
     text-align: justify;
     font-family: "Oxanium", serif;
     margin: auto;
-    margin-top: -150px;
+    margin-top: -130px;
     padding: 3% 5%; /* Add padding for spacing without exceeding width */
     line-height: 200%;
     font-weight: 100;
+    font-size: 2vw;
 }
 
 /* Section: Måder at Støtte På */
 .maaderstoedt h1 {
     text-align: left;
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-top: 6%;
     margin-left: 3%;
     max-width: 100%;
-    margin-bottom: -190px;
+    margin-bottom: -150px;
 }
 
-/* Infographics Container */
-.infographic-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*karusel*/
+.carousel-container {
     position: relative;
-    width: 100%;
-    max-width: 100%; /* Ensure container doesn't exceed screen width */
-    overflow: hidden; /* Prevent content overflow */
+    width: 90%; /* Adjust width as needed */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflowing content */
 }
 
-/* Infographics */
-.infographics {
+
+.carousel-track {
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    width: 90%;
-    max-width: 100%;
-    gap: 20px; /* Space between items */
+    width: 300%; /* Three sets of items (100% x 3) */
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
 }
 
-.infographic-item {
-    text-align: center;
-    width: 30%; /* Ensure three items fit side by side */
-    max-width: 100%;
-    padding: 10px;
-    flex-shrink: 0;
-}
-
-.infographic-item img {
+.carousel {
     width: 100%;
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline; /* Align all items to their baseline */
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 33.33%; /* Show 3 items per slide */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex; /* Make each item a flex container */
+    flex-direction: column; /* Arrange image and content vertically */
+    justify-content: flex-end; /* Push content to the bottom */
+    align-items: center; /* Center content horizontally */
+}
+
+.carousel-item img {
+    display: block;
+    width: 80%; /* Adjust image size */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add spacing from any text */
 }
 
-.infographic-item p {
-    font-size: 3vw;
-    max-width: 100%;
-    color: var(--tyrkis);
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
 }
 
-.infographic-item p:hover{
-    color: var(--pink);
+/* Slide 1 */
+#slide1:checked ~ .carousel .carousel-track {
+    transform: translateX(0%);
+}
+
+/* Slide 2 */
+#slide2:checked ~ .carousel .carousel-track {
+    transform: translateX(-100%);
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-between; /* Place arrows on the sides */
+    margin: 20px 0;
+}
+
+.nav-btn {
+    font-size: 2rem; /* Adjust the size of the arrows */
+    color: var(--tyrkis); /* Set the arrow color */
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
 }
 
-/* Arrow Navigation */
-.arrow {
-    background: none;
-    border: none;
-    font-size: 300%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--tyrkis);
+.nav-btn:first-of-type::before {
+    content: "\f104"; /* Font Awesome's left arrow icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
-.arrow.prev {
-    left: 2%;
+.nav-btn:last-of-type::before {
+    content: "\f105"; /* Font Awesome's right arrow icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
-.arrow.next {
-    right: 2%;
-}
-
-.arrow:hover {
-    color: var(--pink);
+.nav-btn:hover::before {
+    color: var(--pink); /* Change color on hover */
 }
