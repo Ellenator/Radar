@@ -30,89 +30,126 @@ body, html {
 }
 
 /******************************************************PC*************************************************/
+/* Global Reset and Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: radarfont;
+    box-sizing: border-box; /* Ensure padding and borders are included in width calculations */
+}
 
-/*baggrundsbillede i header*/
-body{
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%; /* Prevent content from overflowing horizontally */
+    overflow-x: hidden; /* Hide any accidental overflow */
+}
+
+/* Background Image */
+body {
     background-image: url(../img/baggrundsbilledeto.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100vw;
 }
 
-/*redigering af første overskift hvorfor støt radar*/
-.hvorforstoedt{
+/* Section: Hvorfor Støtte Radar */
+.hvorforstoedt {
     color: var(--pink);
     text-align: left;
     font-size: 2.5vw;
     margin-left: 3%;
-    margin-top: 15%;
-    padding-top: 2%;
+    margin-top: 50px;
+    max-width: 100%;
 }
 
-/* tilføjer den lilla baggrund over hele main*/
-main{
+/* Main Container */
+main {
     background-color: var(--dyblilla);
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
-/*redigering af teksten til hvorfor stødt*/
-.tekst{
-    width: 80%;
+/* Text Section */
+.tekst {
+    width: 90%;
+    max-width: 100%; /* Prevent the text block from exceeding the screen width */
     color: var(--pink);
     text-align: justify;
     font-family: "Oxanium", serif;
-    margin-top: -10%;
-    margin-left: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    line-height: 150%;
+    margin: auto;
+    margin-top: -150px;
+    padding: 3% 5%; /* Add padding for spacing without exceeding width */
+    line-height: 200%;
     font-weight: 100;
 }
 
-/*redigering af anden overskrift*/
-.maaderstoedt h1{
+/* Section: Måder at Støtte På */
+.maaderstoedt h1 {
     text-align: left;
     font-size: 2.5vw;
     margin-top: 6%;
     margin-left: 3%;
+    max-width: 100%;
+    margin-bottom: -190px;
 }
 
-/*redigering af infographics*/
+/* Infographics Container */
 .infographic-container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     position: relative;
+    width: 100%;
+    max-width: 100%; /* Ensure container doesn't exceed screen width */
+    overflow: hidden; /* Prevent content overflow */
 }
 
+/* Infographics */
 .infographics {
     display: flex;
-    overflow: hidden;
-    width: 90%; /* Restricts the visible area */
     justify-content: space-evenly;
     align-items: baseline;
+    width: 90%;
+    max-width: 100%;
+    gap: 20px; /* Space between items */
 }
 
 .infographic-item {
     text-align: center;
+    width: 30%; /* Ensure three items fit side by side */
+    max-width: 100%;
     padding: 10px;
+    flex-shrink: 0;
 }
 
 .infographic-item img {
-    width: 70%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
 .infographic-item p {
     font-size: 3vw;
-}
-
-.infographics p{
+    max-width: 100%;
     color: var(--tyrkis);
-    font-family: "Oxanium", serif;
-    margin-top: 10%;
 }
 
-/*pile redigering*/
+.infographic-item p:hover{
+    color: var(--pink);
+    cursor: pointer;
+}
+
+/* Arrow Navigation */
 .arrow {
     background: none;
     border: none;
@@ -121,18 +158,17 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--tyrkis);
 }
 
 .arrow.prev {
     left: 2%;
-    color: var(--tyrkis);
 }
 
 .arrow.next {
     right: 2%;
-    color: var(--tyrkis);
 }
 
-.arrow.prev:hover, .arrow.next:hover{
+.arrow:hover {
     color: var(--pink);
 }
