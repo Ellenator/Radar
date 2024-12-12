@@ -148,6 +148,26 @@ header {
     background-color: var(--pink);
 }
 
+/*andensektion redigering*/
+.andensektionalt{
+    background-color: var(--dyblilla);
+    display: flex;
+}
+
+.andensektiontekst article h1,
+.andensektiontekst article h2 + p{
+    display: flex;
+}
+
+.andensektiontekst{
+    color: var(--pink);
+}
+
+.andensektiontekst h2{
+    
+}
+
+
 /*******************************************tilpasning på mindre pc skærme********************************************/
 @media only screen and (max-width: 1135px){
     
