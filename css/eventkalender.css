@@ -209,8 +209,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     text-align: center;
+    padding-bottom: 0;
 }
 
 .featured-content img {
@@ -225,7 +225,10 @@ header {
     color: var(--pink);
     font-size: 5vw;
     text-shadow: -3px 3px var(--gul), -6px 6px var(--tyrkis);
-    margin-bottom: 0px;
+}
+
+footer{
+    padding-top: -80px;
 }
 
 
