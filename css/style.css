@@ -87,7 +87,7 @@ header {
     justify-content: center; 
     align-items: center;
     position: relative; 
-    z-index: 3; 
+    z-index: 1; 
 }
 
 .knaptekster {
@@ -116,7 +116,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative; 
-    z-index: 2; 
+    z-index: 1; 
 }
 
 .storeknapmenuertekst {
@@ -129,7 +129,7 @@ header {
     cursor: pointer;
     margin-top: 3vw;
     position: relative;
-    z-index: 3; 
+    z-index: -10; 
 }
 
 .storeknapmenuertekst2{

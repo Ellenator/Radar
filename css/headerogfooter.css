@@ -259,7 +259,7 @@ h1{
     display: none;
     position: absolute;
     background-color: rgba(33, 4, 86, 0.8); /* Semi-transparent baggrund uden teksten er transperant */
-    z-index: 1000;
+    z-index: 9999;
     left: 0;
     right: 0;
     text-align: center;
