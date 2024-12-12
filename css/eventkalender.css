@@ -28,3 +28,247 @@ body, html {
     padding: 0;
     width: 100%;
 }
+
+/********************************************************PC**************************************/
+/*skjuler knap til tlf på pc og tablet*/
+.storeknapmenuertekst3{
+    display: none;
+}
+
+/*baggrundsbillede slenderbodies*/ 
+body{
+    background-image: url(../img/slenderbodiesbaggrund.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(33, 4, 86, 0.9) 0%,
+        rgba(33, 4, 86, 0.7) 10%,
+        rgba(33, 4, 86, 0.4) 20%, 
+        rgba(33, 4, 86, 0.1) 35%,
+        rgba(0, 0, 0, 0) 100%   
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+/*header over gradient*/
+header {
+    position: relative;
+    z-index: 3; 
+}
+
+/*overskift redigering*/
+.slenderbodiesoverskrift {
+    color: var(--pink);
+    font-size: calc(8vw + 1rem);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    word-wrap: break-word;
+    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+    margin-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+/*små knapmenuer redigering*/
+.knapper {
+    display: flex;
+    gap: 5%;
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    z-index: 3; 
+}
+
+.knaptekster {
+    background-color: var(--tyrkis);
+    color: var(--pink);
+    box-shadow: -5px 5px 0 var(--dyblilla);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 10vw;
+    font-size: 2vw;
+    margin-top: -110px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3; 
+}
+
+.knaptekster:hover{
+    color: var(--tyrkis);
+    background-color: var(--pink);
+}
+
+/*storeknapmenuer redigering*/
+.storeknapmenuer {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 2; 
+}
+
+.storeknapmenuertekst {
+    background-color: var(--dyblilla);
+    color: var(--pink);
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+    width: 30vw;
+    font-size: 3.5vw;
+    cursor: pointer;
+    margin-top: 3vw;
+    position: relative;
+    z-index: 3; 
+}
+
+.storeknapmenuertekst2{
+    background-color: var(--dyblilla);
+    color: var(--pink);
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+    width: 30vw;
+    font-size: 3.5vw;
+    cursor: pointer;
+    margin-top: 3vw;
+}
+
+.storeknapmenuertekst:hover, .storeknapmenuertekst2:hover{
+    color: var(--dyblilla);
+    background-color: var(--pink);
+}
+
+/*******************************************tilpasning på mindre pc skærme********************************************/
+@media only screen and (max-width: 1135px){
+    
+    .storeknapmenuertekst{
+        margin-top: 1vw;
+    }
+
+    .storeknapmenuertekst2{
+        margin-top: 1vw;
+    }
+}
+
+@media only screen and (max-width: 918px){
+    .storeknapmenuertekst{
+        margin-top: 0.3vw;
+    }
+
+    .storeknapmenuertekst2{
+        margin-top: 0.3vw;
+    }
+}
+
+/********************************************TABLET************************************/
+@media only screen and (max-width: 768px){
+
+/*overskift tilpasning*/
+    .slenderbodiesoverskrift{
+        font-size: 13vw;
+        text-wrap: nowrap;
+        padding-right: 30px;
+    }
+
+/*små knapmenuer redigering*/
+    .knaptekster{
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        width: 15vw;
+        font-size: 3vw;
+        margin-top: -90px;
+    }
+
+    .knapper {
+        gap: 5%;
+    }
+
+/*storeknapmenuer redigering*/
+    .storeknapmenuer{
+        gap: 5%;
+    }
+    
+    .storeknapmenuertekst{
+        padding-top: 14vw;
+        padding-bottom: 14vw;
+        width: 35vw;
+        font-size: 4.5vw;
+        margin-top: 3vw;
+    }
+
+    .storeknapmenuertekst2{
+        padding-top: 14vw;
+        padding-bottom: 14vw;
+        width: 35vw;
+        font-size: 4.5vw;
+        margin-top: 3vw;
+    }
+}
+
+/**************************************TELEFON*******************************************/
+@media only screen and (max-width: 480px){
+
+    /*overskift tilpasning*/
+        .slenderbodiesoverskrift{
+            font-size: 13vw;
+            text-wrap: nowrap;
+            padding-right: 30px;
+        }
+    
+    /*små knapmenuer redigering*/
+        .knaptekster{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+            width: 20vw;
+            font-size: 4vw;
+            margin-top: -90px;
+        }
+    
+        .knapper {
+            gap: 5%;
+        }
+    
+    /*storeknapmenuer redigering*/
+        .storeknapmenuer{
+            flex-direction: column;
+            align-items: center;
+            gap: 14vw;
+        }
+    
+        .storeknapmenuertekst{
+            padding-top: 30vw;
+            padding-bottom: 30vw;
+            width: 70vw;
+            font-size: 8vw;
+            margin-bottom: -20%;
+        }
+    
+    /*skjuler knap på fra pc på tlf*/
+        .storeknapmenuertekst2{
+           display: none;
+        }
+    
+    /*tilføjer kanp på tlf det rigtige sted*/
+    .storeknapmenuertekst3{
+        padding-top: 30vw;
+        background-color: var(--dyblilla);
+        color: var(--pink);
+        margin-top: -14%;
+        padding-bottom: 30vw;
+        width: 70vw;
+        font-size: 8vw;
+        margin-bottom: 14vw;
+        display: block;
+    }
+    
+    }
