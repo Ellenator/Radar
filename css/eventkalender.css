@@ -35,6 +35,11 @@ body, html {
     display: none;
 }
 
+/*skjuler event til tlf på pc og tablet*/
+.featured-event2{
+    display: none;
+}
+
 /*baggrundsbillede slenderbodies*/ 
 body{
     background-image: url(../img/slenderbodiesbaggrund.jpg);
@@ -220,6 +225,7 @@ header {
     color: var(--pink);
     font-size: 5vw;
     text-shadow: -3px 3px var(--gul), -6px 6px var(--tyrkis);
+    margin-bottom: 0px;
 }
 
 
@@ -319,4 +325,57 @@ header {
     display: block;
 }
 
+/*redigering af events på tlf*/
+.event-list{
+  width: 90%;
+  align-items: center;
+  padding-top: 7vw;
+}
+
+.event-item h2{
+    font-size: 5vw;
+}
+
+.event-item p{
+    font-size: 3vw;
+}
+
+.event-date{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 3vw;
+    text-align: center;
+    margin-left: 7vw;
+}
+
+.featured-event{
+    display: none;
+}
+
+.featured-event2{
+    display: block;
+    background-color: var(--dyblilla);
+    padding-top: 10vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-event2 img{
+    width: 80%;
+    align-items: center;
+    margin-left: 1vw;
+    height: auto;
+    box-shadow: -8px 8px var(--pink);
+}
+
+.featured-content2 h1 {
+    margin-top: 15px;
+    color: var(--pink);
+    font-size: 10vw;
+    text-shadow: -3px 3px var(--gul), -6px 6px var(--tyrkis);
+    margin-bottom: -120px;
+}
     }
