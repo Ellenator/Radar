@@ -193,25 +193,9 @@ header {
         gap: 5%;
     }
 
-/*storeknapmenuer redigering*/
+/*storeknapmenuer skjult på tablet*/
     .storeknapmenuer{
-        gap: 5%;
-    }
-    
-    .storeknapmenuertekst{
-        padding-top: 14vw;
-        padding-bottom: 14vw;
-        width: 35vw;
-        font-size: 4.5vw;
-        margin-top: 3vw;
-    }
-
-    .storeknapmenuertekst2{
-        padding-top: 14vw;
-        padding-bottom: 14vw;
-        width: 35vw;
-        font-size: 4.5vw;
-        margin-top: 3vw;
+        display: none;
     }
 }
 
@@ -223,52 +207,28 @@ header {
             font-size: 13vw;
             text-wrap: nowrap;
             padding-right: 30px;
+            padding-bottom: 5%;
         }
-    
+
     /*små knapmenuer redigering*/
         .knaptekster{
             padding-top: 4vw;
             padding-bottom: 4vw;
-            width: 20vw;
-            font-size: 4vw;
-            margin-top: -90px;
+            width: 95%;
+            font-size: 6vw;
+            margin-top: 8px;
+            text-align: start;
+            padding-left: 5%;
         }
+
+        
     
         .knapper {
-            gap: 5%;
+            display: block;
         }
     
-    /*storeknapmenuer redigering*/
-        .storeknapmenuer{
-            flex-direction: column;
-            align-items: center;
-            gap: 14vw;
-        }
-    
-        .storeknapmenuertekst{
-            padding-top: 30vw;
-            padding-bottom: 30vw;
-            width: 70vw;
-            font-size: 8vw;
-            margin-bottom: -20%;
-        }
-    
-    /*skjuler knap på fra pc på tlf*/
-        .storeknapmenuertekst2{
-           display: none;
-        }
-    
-    /*tilføjer kanp på tlf det rigtige sted*/
-    .storeknapmenuertekst3{
-        padding-top: 30vw;
-        background-color: var(--dyblilla);
-        color: var(--pink);
-        margin-top: -14%;
-        padding-bottom: 30vw;
-        width: 70vw;
-        font-size: 8vw;
-        margin-bottom: 14vw;
-        display: block;
+    /*storeknapmenuer skjult på tlf*/
+    .storeknapmenuer{
+        display: none;
     }
-    
     }
