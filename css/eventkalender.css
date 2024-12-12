@@ -130,6 +130,7 @@ header {
     margin-top: 3vw;
     position: relative;
     z-index: 3; 
+    margin-bottom: 5vw;
 }
 
 .storeknapmenuertekst2{
@@ -141,6 +142,7 @@ header {
     font-size: 3.5vw;
     cursor: pointer;
     margin-top: 3vw;
+    margin-bottom: 5vw;
 }
 
 .storeknapmenuertekst:hover, .storeknapmenuertekst2:hover{
@@ -152,7 +154,6 @@ header {
 .event-container {
     display: flex;
     width: 100%;
-    gap: 20px;
     background-color: var(--dyblilla);
 }
 
@@ -161,15 +162,15 @@ header {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 .event-item {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
-    padding: 15px;
-    border-radius: 10px;
+    padding-top: 1vw;
+    margin-left: 4vw;
+    margin-top: 4vw;
 }
 
 .event-date {
@@ -179,21 +180,20 @@ header {
     padding-bottom: 3vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
-    
     box-shadow: -5px 5px var(--pink);
 }
 
 .event-info h2 {
     margin: 0;
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--pink);
 }
 
 .event-info p {
     margin: 5px 0 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: var(--pink);
     font-family: "Oxanium", serif;
 }
@@ -212,13 +212,14 @@ header {
     width: 80%;
     height: auto;
     box-shadow: -8px 8px var(--pink);
+    margin-top: 12vw;
 }
 
 .featured-content h1 {
     margin-top: 15px;
     color: var(--pink);
     font-size: 5vw;
-    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+    text-shadow: -3px 3px var(--gul), -6px 6px var(--tyrkis);
 }
 
 
@@ -273,6 +274,15 @@ header {
     }
 }
 
+/*skriftstørrelses redigering på tablet*/
+.event-info h2{
+    font-size: 3vw;
+}
+
+.event-info p{
+    font-size: 2vw;
+}
+    
 /**************************************TELEFON*******************************************/
 @media only screen and (max-width: 480px){
 
@@ -294,8 +304,6 @@ header {
             text-align: start;
             padding-left: 5%;
         }
-
-        
     
         .knapper {
             display: block;
@@ -305,4 +313,10 @@ header {
     .storeknapmenuer{
         display: none;
     }
+
+/*layout skift på anden sektion*/
+.event-container, .featured-event{
+    display: block;
+}
+
     }
