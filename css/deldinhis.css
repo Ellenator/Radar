@@ -230,17 +230,23 @@ section{
     background-color: var(--tyrkis);
     color: var(--pink);
     padding: 1rem;
-    width: 80%; /* Use percentage for dynamic width */
-    margin: 1rem auto; /* Center horizontally with margin */
+    width: 80%;
+    margin: 1rem auto;
+    box-shadow: -6px 6px 0 var(--pink);
 }
 
-.forumboks span{
-    position: absolute; /* Position the stars relative to .forumboks */
-    right: 1rem; /* Move them to the right end */
-    transform: translateY(-5%); /* Adjust for exact vertical centering */
-    color: var(--gul); /* Keep the star color */
-    font-size: 1rem; /* Adjust star size if needed */
+.stjerner{
+    position: absolute;
+    top: 1rem;
+    right: 1rem; 
+    display: flex; 
+    gap: 0.5rem; 
+    text-shadow: -1px 1px var(--dyblilla);
+}
+
+.stars .fa-star {
     color: var(--gul);
+    font-size: 1.5rem;
 }
 
 .forumoverskrift{
@@ -257,5 +263,3 @@ section{
     padding-right: 1.5rem;
     margin-bottom: 30px;
 }
-
-
