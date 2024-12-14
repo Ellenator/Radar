@@ -72,12 +72,14 @@ position: relative;
     margin: -110px auto 0;
     display: block;
     text-align: center;
+    box-shadow: -5px 5px 0 var(--pink);
 }
 
 .deldinhistoriesektion h2:hover{
     color: var(--tyrkis);
     background-color: var(--pink);
     cursor: pointer;
+    box-shadow: -5px 5px 0 var(--tyrkis);
 }
 
 /*flex af featured del din his*/
@@ -85,16 +87,30 @@ position: relative;
     display: flex;
     justify-content: center;
     gap: 2vw;
-    margin-top: 10vw;
+    margin-top: 4rem;
     width: 100vw;
+    background-image: url(../img/baggrundsbilledeto.jpg);
 }
 
 /* Individual Card */
-.card {
-    width: 30vw;
+.card, .card2 {
+    width: 25vw;
     overflow: hidden;
     position: relative;
     text-align: left;
+    
+}
+
+.card2{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+}
+
+/*forskydning*/
+.card{
+    transform: translateY(-120px); /* Move the image up by 20px */
 }
 
 /*Redigering af billeder*/
@@ -102,11 +118,6 @@ position: relative;
     width: 100%;
     height: auto;
     
-}
-
-/* forskydning af to billeder */
-.forskydning{
-    padding-top: -20%;
 }
 
 /* Card Content */
@@ -141,6 +152,7 @@ position: relative;
     margin-left: 10px;
     font-size: 0.8rem;
     text-shadow: -1px 1px var(--dyblilla);
+    padding-bottom: 5px;
 }
 
 
