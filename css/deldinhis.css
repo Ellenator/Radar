@@ -176,6 +176,7 @@ section h1{
 section{
     display: flex;
     justify-content: space-between;
+    margin-bottom: -90px;
 }
 
 .filterknap{
@@ -201,10 +202,8 @@ section{
 .filterting {
     display: none; /* Initially hide the dropdown */
     position: absolute;
-    background-color: var(--tyrkis);
-    min-width: 160px;
+    background-color: var(--gul);
     z-index: 1;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .filterting a {
@@ -225,7 +224,38 @@ section{
     display: block;
 }
 
+/*Forumboks redigering*/
+.forumboks{
+    position: relative;
+    background-color: var(--tyrkis);
+    color: var(--pink);
+    padding: 1rem;
+    width: 80%; /* Use percentage for dynamic width */
+    margin: 1rem auto; /* Center horizontally with margin */
+}
 
+.forumboks span{
+    position: absolute; /* Position the stars relative to .forumboks */
+    right: 1rem; /* Move them to the right end */
+    transform: translateY(-5%); /* Adjust for exact vertical centering */
+    color: var(--gul); /* Keep the star color */
+    font-size: 1rem; /* Adjust star size if needed */
+    color: var(--gul);
+}
 
+.forumoverskrift{
+    text-align: start;
+    color: var(--pink);
+    font-family: "Oxanium", serif;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.forumtekst{
+    font-family: "Oxanium", serif;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+    margin-bottom: 30px;
+}
 
 
