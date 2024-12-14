@@ -28,3 +28,122 @@ body, html {
     padding: 0;
     width: 100%;
 }
+
+/**********************************************PC***************************************/
+
+body {
+    background-image: 
+    linear-gradient(
+        to top,
+        rgba(33, 4, 86, 1) 0%,
+        rgba(33, 4, 86, 1) 90%,
+        rgba(33, 4, 86, 0.8) 95%,
+        rgba(33, 4, 86, 0.5) 98%, 
+        rgba(33, 4, 86, 0.2) 100%),
+    url(../img/baggrundsbilledeto.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 98vw;
+position: relative;
+}
+
+/*Redigering af første sektion*/
+.deldinhistoriesektion{
+    display: block;
+    text-align: center;
+}
+
+/* den din historie overskrift redigering*/
+.deldinhistoriesektion h1{
+    color: var(--pink);
+    font-size: 6vw;
+    text-shadow: -4px 4px var(--gul), -8px 8px var(--tyrkis);
+}
+
+/*Upload knap*/
+.deldinhistoriesektion h2{
+    color: var(--pink);
+    background-color: var(--tyrkis);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 10vw;
+    font-size: 2vw;
+    margin: -110px auto 0;
+    display: block;
+    text-align: center;
+}
+
+.deldinhistoriesektion h2:hover{
+    color: var(--tyrkis);
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+/*flex af featured del din his*/
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 10vw;
+    width: 100vw;
+}
+
+/* Individual Card */
+.card {
+    width: 30vw;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+/*Redigering af billeder*/
+.card-image {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* forskydning af to billeder */
+.forskydning{
+    padding-top: -20%;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+    color: var(--tyrkis);
+    background-color: var(--tyrkis);
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--pink);
+    font-family: "Oxanium", serif;
+    font-weight: 500;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: "Oxanium", serif;
+    color: var(--pink);
+}
+
+.checked{
+    color: var(--gul);
+}
+
+.card-content span{
+    float: right;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    text-shadow: -1px 1px var(--dyblilla);
+}
+
+
+
+
+
