@@ -215,13 +215,20 @@ section{
     font-family:  "Oxanium", serif;
 }
 
-.filterting a:hover {
-    background-color: var(--gul);
+.filterknap:hover {
+    background-color: var(--gul); /* New background color on hover */
+    color: var(--pink); /* Optional: Change text color */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 /*viser dropdown filter når klikkes*/
 .filter:focus-within .filterting {
     display: block;
+}
+
+.filterting a:hover{
+    background-color: var(--pink);
+    color: var(--gul);
 }
 
 /*Forumboks redigering*/
@@ -268,9 +275,9 @@ section{
     background-color: var(--pink);
     color: var(--gul);
     padding: 0.5vw 1vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     float: right;
-    margin-top: -3vw;
+    margin-top: -2.5vw;
 }
 
 .forumboks button:hover{
