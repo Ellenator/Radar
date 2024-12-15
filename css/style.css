@@ -87,7 +87,7 @@ header {
     justify-content: center; 
     align-items: center;
     position: relative; 
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .knaptekster {
@@ -99,14 +99,14 @@ header {
     width: 10vw;
     font-size: 2vw;
     margin-top: -110px;
-    cursor: pointer;
     position: relative;
-    z-index: 3; 
+    z-index: 10; 
 }
 
-.knaptekster:hover{
+.knapper .knaptekster:hover {
     color: var(--tyrkis);
     background-color: var(--pink);
+    cursor: pointer;
 }
 
 /*storeknapmenuer redigering*/
@@ -129,7 +129,6 @@ header {
     cursor: pointer;
     margin-top: 3vw;
     position: relative;
-    z-index: -10; 
 }
 
 .storeknapmenuertekst2{
