@@ -122,7 +122,7 @@ overflow-x: hidden;
 
 /*forskydning*/
 .card{
-    transform: translateY(-10vw); /* Move the image up by 20px */
+    transform: translateY(-10vw);
 }
 
 /*Redigering af billeder*/
@@ -196,12 +196,12 @@ section{
 
 
 .filter {
-    position: relative; /* Position the dropdown relative to the button */
+    position: relative;
     display: inline-block;
 }
 
 .filterting {
-    display: none; /* Initially hide the dropdown */
+    display: none;
     position: absolute;
     background-color: var(--gul);
     z-index: 1;
@@ -217,9 +217,9 @@ section{
 }
 
 .filterknap:hover {
-    background-color: var(--gul); /* New background color on hover */
-    color: var(--pink); /* Optional: Change text color */
-    cursor: pointer; /* Change cursor to pointer */
+    background-color: var(--gul);
+    color: var(--pink);
+    cursor: pointer;
 }
 
 /*viser dropdown filter når klikkes*/
@@ -294,8 +294,22 @@ section{
 /*****************************************************TELEFON*******************************************/
 @media only screen and (max-width: 480px){
 
-/*Upload knap*/
+/*Del din historie overskift redigering*/
+.deldinhistoriesektion h1{
+    font-size: 11vw;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
 
+/*Upload knap*/
+.deldinhistoriesektion h2{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    width: 100%;
+    font-size: 7vw;
+    text-align: start;
+    padding-left: 4vw;
+}
 
 /* udvalgte historie blokkes i stedet for flex*/
     .cards-container {
@@ -320,7 +334,7 @@ section{
     }
 
     .card{
-        margin-top: 100px;
+        margin-top: 15vw;
     }
 
 /*størrelse på citation ændret*/
@@ -330,19 +344,44 @@ section{
 
 /*skriftstøttelse laves større*/
     .card-content h3 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     
     .card-content p {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
 /*Stjerner laves større*/
 .card-content .fa-star {
-    font-size: 2.5vw 
+    font-size: 2vw;
 }
 
 .card-content .checked {
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
+
+/*Forum overskift redigering*/
+section h1{
+    font-size: 10vw;
+    margin-left: 2vw;
+}
+
+/*Filterknap redigering*/
+.filterknap{
+    font-size: 4vw;
+    margin-top: 4vw;
+}
+
+.filterting a {
+    font-size: 3vw;
+    padding: 3vw 6vw;
+}
+
+/*Kommentér knap redigering*/
+.forumboks button{
+    font-size: 4vw;
+    float: right;
+    margin-top: -4vw;
+}
+
 }
