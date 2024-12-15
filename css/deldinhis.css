@@ -263,3 +263,17 @@ section{
     padding-right: 1.5rem;
     margin-bottom: 30px;
 }
+
+.forumboks button{
+    background-color: var(--pink);
+    color: var(--gul);
+    padding: 0.5vw 1vw;
+    font-size: 2vw;
+    float: right;
+    margin-top: -3vw;
+}
+
+.forumboks button:hover{
+    color: var(--pink);
+    background-color: var(--gul);
+}
