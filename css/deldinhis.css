@@ -46,6 +46,7 @@ background-size: cover;
 background-position: center;
 width: 98vw;
 position: relative;
+overflow-x: hidden;
 }
 
 /*Redigering af første sektion*/
