@@ -285,3 +285,64 @@ section{
     color: var(--pink);
     background-color: var(--gul);
 }
+
+/*****************************************************TABLET********************************************/
+@media only screen and (max-width: 768px){
+
+}
+
+/*****************************************************TELEFON*******************************************/
+@media only screen and (max-width: 480px){
+
+/*Upload knap*/
+
+
+/* udvalgte historie blokkes i stedet for flex*/
+    .cards-container {
+        display: block; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically (if necessary) */
+        align-items: center; /* Center items horizontally */
+        margin: 0 auto; /* Ensure the container stays centered */
+        gap: 1rem; /* Add space between the cards */
+        background-image: url(../img/baggrundsbilledeto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top; /* Adjust vertical alignment to the top */
+        position: relative; /* Ensure positioning context is set */
+        padding-top: 20px; /* Add padding to create space for the shifted background */
+    }
+
+/*størrelsen på historierne redigeres*/
+    .card, .card2 {
+        width: 70%; /* Make cards take up most of the screen */
+        margin: 0 auto; /* Center cards inside the container */
+    }
+
+    .card{
+        margin-top: 100px;
+    }
+
+/*størrelse på citation ændret*/
+    .citation{
+        font-size: 20vw;
+    }
+
+/*skriftstøttelse laves større*/
+    .card-content h3 {
+        font-size: 3.5vw;
+    }
+    
+    .card-content p {
+        font-size: 2.5vw;
+    }
+
+/*Stjerner laves større*/
+.card-content .fa-star {
+    font-size: 2.5vw 
+}
+
+.card-content .checked {
+    font-size: 2.5vw;
+}
+}
