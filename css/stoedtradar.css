@@ -197,17 +197,6 @@ input[type="radio"] {
     color: var(--pink);
 }
 
-
-/****************************************TILPASNING PÅ MINDRE PC SKÆRME******************************/
-@media only screen and (max-width: 1135px){
-   
-}
-
-
-@media only screen and (max-width: 918px){
-
-}
-
 /***************************************************TABLET***************************************/
 @media only screen and (max-width: 768px){
     
