@@ -59,6 +59,7 @@ position: relative;
     margin-left: 3%;
     max-width: 100%;
     color: var(--pink);
+    margin-bottom: 120px;
 }
 
 /* Main Container */
@@ -85,13 +86,13 @@ main {
 }
 
 /* redigering af overskiften Måder at Støtte På */
-.maaderstoedt h1 {
+.maaderstoedt h2{
     text-align: left;
     font-size: 3vw;
     margin-top: 6%;
     margin-left: 3%;
     max-width: 100%;
-    margin-bottom: -120px;
+    color: var(--tyrkis);
 }
 
 /*Carousel med infographics*/
@@ -199,10 +200,14 @@ input[type="radio"] {
 
 /***************************************************TABLET***************************************/
 @media only screen and (max-width: 768px){
-    
+    .hvorforstoedt {
+        margin-bottom: 150px;
+    }
 }
 
 /****************************************************TLF*****************************************/
 @media only screen and (max-width: 480px){
-
+    .hvorforstoedt {
+        margin-bottom: 140px;
+    }
 }
