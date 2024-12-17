@@ -1,2 +1,4 @@
 User-agent: *
 disallow: /
+
+sitemap: Her kommer mit sites landigpage url...

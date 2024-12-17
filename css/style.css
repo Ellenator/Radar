@@ -78,6 +78,7 @@ header {
     margin-top: 80px;
     position: relative;
     z-index: 2;
+    margin-bottom: 200px;
 }
 
 /*små knapmenuer redigering*/
@@ -101,6 +102,7 @@ header {
     margin-top: -110px;
     position: relative;
     z-index: 10; 
+    text-align: center;
 }
 
 .knapper .knaptekster:hover {
@@ -203,6 +205,7 @@ header {
         font-size: 13vw;
         text-wrap: nowrap;
         padding-right: 30px;
+        margin-bottom: 150px;
     }
 
 /*små knapmenuer redigering*/
