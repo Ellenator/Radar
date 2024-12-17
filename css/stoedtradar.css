@@ -202,6 +202,15 @@ input[type="radio"] {
 @media only screen and (max-width: 768px){
     .hvorforstoedt {
         margin-bottom: 150px;
+        font-size: 5vw;
+    }
+
+    .maaderstoedt h2{
+        font-size: 5vw;
+    }
+
+    .tekst {
+        font-size: 3vw;
     }
 }
 
@@ -209,5 +218,14 @@ input[type="radio"] {
 @media only screen and (max-width: 480px){
     .hvorforstoedt {
         margin-bottom: 140px;
+        font-size: 6vw;
+    }
+
+    .maaderstoedt h2{
+        font-size: 6vw;
+    }
+
+    .tekst {
+        font-size: 4vw;
     }
 }
