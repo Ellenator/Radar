@@ -1,4 +1,4 @@
 User-agent: *
 disallow: /
 
-sitemap: Her kommer mit sites landigpage url...
+sitemap: https://radar.ellenator.dk/
