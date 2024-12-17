@@ -83,6 +83,7 @@ header {
     margin-top: 80px;
     position: relative;
     z-index: 2;
+    margin-bottom: 200px;
 }
 
 /*små knapmenuer redigering*/
@@ -107,6 +108,7 @@ header {
     cursor: pointer;
     position: relative;
     z-index: 3; 
+    text-align: center;
 }
 
 .knaptekster:hover{
@@ -227,10 +229,6 @@ header {
     text-shadow: -3px 3px var(--gul), -6px 6px var(--tyrkis);
 }
 
-footer{
-    padding-top: -80px;
-}
-
 
 /*******************************************tilpasning på mindre pc skærme********************************************/
 @media only screen and (max-width: 1135px){
@@ -262,6 +260,7 @@ footer{
         font-size: 13vw;
         text-wrap: nowrap;
         padding-right: 30px;
+        margin-bottom: 150px;
     }
 
 /*små knapmenuer redigering*/
@@ -300,7 +299,6 @@ footer{
             font-size: 13vw;
             text-wrap: nowrap;
             padding-right: 30px;
-            padding-bottom: 5%;
         }
 
 /*små knapmenuer redigering*/
