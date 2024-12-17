@@ -1,4 +1,4 @@
 User-agent: *
 disallow: /
 
-sitemap: https://radar.ellenator.dk/
+sitemap: https://radar.ellenator.dk/index.html
