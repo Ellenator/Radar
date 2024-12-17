@@ -42,7 +42,7 @@ body, html {
 
 /*baggrundsbillede slenderbodies*/ 
 body{
-    background-image: url(../img/slenderbodiesbaggrund.jpg);
+    background-image: url(../img/slenderbodiesbaggrund.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }

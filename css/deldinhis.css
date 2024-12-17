@@ -40,7 +40,7 @@ body {
         rgba(33, 4, 86, 0.8) 95%,
         rgba(33, 4, 86, 0.5) 98%, 
         rgba(33, 4, 86, 0.2) 100%),
-    url(../img/baggrundsbilledeto.jpg);
+    url(../img/baggrundsbilledeto.webp);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -98,7 +98,7 @@ overflow-x: hidden;
     justify-content: center;
     margin-top: 4rem;
     width: 100vw;
-    background-image: url(../img/baggrundsbilledeto.jpg);
+    background-image: url(../img/baggrundsbilledeto.webp);
     background-repeat: no-repeat;
     overflow: visible;
 }
@@ -326,7 +326,7 @@ section{
         align-items: center; /* Center items horizontally */
         margin: 0 auto; /* Ensure the container stays centered */
         gap: 1rem; /* Add space between the cards */
-        background-image: url(../img/baggrundsbilledeto.jpg);
+        background-image: url(../img/baggrundsbilledeto.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top; /* Adjust vertical alignment to the top */
